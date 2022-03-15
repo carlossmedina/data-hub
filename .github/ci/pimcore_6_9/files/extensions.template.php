@@ -23,6 +23,6 @@ return [
     ],
     "bundle" => [
         "Pimcore\\Bundle\\EcommerceFrameworkBundle\\PimcoreEcommerceFrameworkBundle" => FALSE,
-        "CustomerManagementFrameworkBundle\\PimcoreCustomerManagementFrameworkBundle" => TRUE
+        "Pimcore\\Bundle\\DataHubBundle\\PimcoreDataHubBundle" => TRUE
     ]
 ];

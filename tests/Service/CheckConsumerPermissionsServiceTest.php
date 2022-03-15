@@ -14,11 +14,11 @@
  */
 namespace Pimcore\Bundle\DataHubBundle\Tests\Controller;
 
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 use Pimcore\Bundle\DataHubBundle\Configuration;
 use Symfony\Component\HttpFoundation\Request;
 
-class CheckConsumerPermissionsServiceTest extends TestCase
+class CheckConsumerPermissionsServiceTest extends PHPUnit_Framework_TestCase
 {
     const CORRECT_API_KEY = "correct_key";
 

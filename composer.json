@@ -16,7 +16,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "DataHubBundle\\Tests\\": "tests"
+      "PimcoreDataHubBundle\\Tests\\": "tests"
     },
     "files": [
       "kernel/Kernel.php",

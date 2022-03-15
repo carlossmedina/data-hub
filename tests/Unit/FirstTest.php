@@ -17,7 +17,7 @@ use DataHubBundle\View\Formatter\ObjectWrapper;
 
 class ObjectWrapperTest extends \PHPUnit_Framework_TestCase
 {
-    public function testScalarReturnsItsValue()
+    public function testOneisEqualOne()
     {
 
         $this->assertEquals(1,1);

@@ -1,5 +1,5 @@
 {
-    "id": "9",
+    "id": null,
     "description": "",
     "modificationDate": 1646950833,
     "parentClass": "",
@@ -25,7 +25,7 @@
         "bodyStyle": null,
         "datatype": "layout",
         "permissions": null,
-        "children": [
+        "childs": [
             {
                 "fieldtype": "panel",
                 "layout": null,
@@ -41,7 +41,7 @@
                 "bodyStyle": "",
                 "datatype": "layout",
                 "permissions": null,
-                "children": [
+                "childs": [
                     {
                         "fieldtype": "input",
                         "width": "",

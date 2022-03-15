@@ -14,14 +14,13 @@
  */
 namespace Pimcore\Bundle\DataHubBundle\Service;
 
-use PHPUnit\Framework\TestCase;
-use Pimcore\Bundle\DataHubBundle\Event\GraphQL\OutputCacheEvents;
+use PHPUnit_Framework_TestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
-class OutputCacheServiceTest extends TestCase
+class OutputCacheServiceTest extends PHPUnit_Framework_TestCase
 {
 
     protected $container;

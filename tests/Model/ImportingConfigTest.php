@@ -26,7 +26,7 @@ use Pimcore\Model\DataObject\DataHubTestEntity;
  * @package Pimcore\Tests\Model\DataObject
  * @group model.dataobject.listing
  */
-class ListingTest extends ModelTestCase
+class ImportingConfigTest extends ModelTestCase
 {
     /**
      * @var TestDataHelper
@@ -40,29 +40,16 @@ class ListingTest extends ModelTestCase
     {
         parent::setUp();
         //TestHelper::cleanUp();
-        $this->prepareData();
+        //$this->prepareData();
     }
 
     public function tearDown(): void
     {
         //TestHelper::cleanUp();
-        parent::tearDown();
+//        parent::tearDown();
     }
 
-    public function prepareData()
-    {
-        $seeds = [10, 11, 42, 53, 65, 78, 85];
 
-        foreach ($seeds as $key => $seed) {
-            $object = new DataHubTestEntity();
-            $object->setParentId(1);
-            $object->setKey('DataHubTest_' . $key);
-            $object->setText('text' . $seed);
-            $object->setPublished(true);
-
-            $object->save();
-        }
-    }
 
     public function testSimpleCondition()
     {
@@ -73,7 +60,7 @@ class ListingTest extends ModelTestCase
         $config = new Configuration('graphql', '/124', self::CONFNAME);
 
 
-        $configurationData = file_get_contents(__DIR__ . '/../_support/Resources/configuration_query_mutaion_allowed.json');
+        $configurationData = file_get_contents(__DIR__ . '/../_support/Resources/configuration_query_mutation_allowed.json');
         $decodedConfigurationData = json_decode($configurationData, true);
         $config->setConfiguration($decodedConfigurationData);
 
