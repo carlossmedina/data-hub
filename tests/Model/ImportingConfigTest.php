@@ -46,7 +46,7 @@ class ImportingConfigTest extends ModelTestCase
     public function tearDown(): void
     {
         //TestHelper::cleanUp();
-//        parent::tearDown();
+       parent::tearDown();
     }
 
 
